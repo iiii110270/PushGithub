@@ -4,4 +4,25 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="wwwroot\Content\**" />
+    <Content Remove="wwwroot\Content\**" />
+    <EmbeddedResource Remove="wwwroot\Content\**" />
+    <None Remove="wwwroot\Content\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\images\HomePage\4K Rick &amp; Morty Background, made my own since none on the net Enjoy - Imgur.jpg" />
+    <Content Remove="wwwroot\images\HomePage\IMG_2115.JPG" />
+    <Content Remove="wwwroot\lib\jqGrid\jquery-ui.css" />
+    <Content Remove="wwwroot\lib\jqGrid\jquery-ui.min.css" />
+    <Content Remove="wwwroot\lib\jqGrid\ui.jqgrid.css" />
+    <Content Remove="wwwroot\lib\jquery\dist\ui.jqgrid.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="jQuery.jqGrid" Version="4.4.4" />
+    <PackageReference Include="jQuery.UI.Combined" Version="1.12.1" />
+  </ItemGroup>
+
 </Project>

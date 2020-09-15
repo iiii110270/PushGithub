@@ -1,0 +1,166 @@
+﻿@{
+    ViewData["Title"] = "WebVille";
+    Layout = "_Layout";
+}
+<head>
+    <style>
+        .WEVI00Menu {
+            position: relative;
+            top: +40px;
+        }
+
+        .leftColumn li,
+        .rightColumn li {
+            font-size: 20px;
+            font-family: cursive;
+            font-weight: bold;
+        }
+
+        ul li ul li {
+            font-size: 15px !important;
+            font-family: cursive !important;
+        }
+
+        .WEVI00Menu {
+            width: 1000px;
+            height: 700px;
+        }
+
+        .leftColumn {
+            position: absolute;
+            top: +40px;
+            left: +300px;
+        }
+
+        .rightColumn {
+            position: absolute;
+            top: +40px;
+            left: +650px;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        .menuButtons {
+            width: 100%;
+            height: 40px;
+            border-bottom: double;
+            border-bottom-color: dimgray;
+        }
+
+            .menuButtons button {
+                margin-right: 20px;
+            }
+    </style>
+</head>
+<body>
+    <div class="text-md-center">
+        <h1>@ViewData["Title"]</h1>
+        <a href="/Home/Works" style="color: cadetblue; text-decoration-line: underline; text-decoration-color: cadetblue;">Back to work list.</a>
+    </div>
+    <div class="menuButtons">
+        <h3>Our menu</h3>
+        <button id="goVegBtn" class="btn btn-dark">Go Vegetarian</button>
+        <button id="restoreBtn" class="btn btn-dark">Restore Menu</button>
+    </div>
+    <div class="WEVI00Menu">
+        <div class="leftColumn">
+            <h3>Entrees</h3>
+            <ul>
+                <li>
+                    Thai-style Halibut
+                    <ul class="ingredients">
+                        <li>coconut milk</li>
+                        <li class="fish">pan-fried halibut</li>
+                        <li>early autumn vegetables</li>
+                        <li>Thai spices</li>
+                    </ul>
+                </li>
+                <li>
+                    Braised Delight
+                    <ul class="ingredients">
+                        <li class="meat">lamb shoulder</li>
+                        <li>cippolini onions</li>
+                        <li>baby turnip</li>
+                        <li>braising jus</li>
+                    </ul>
+                </li>
+                <li>
+                    House Grilled Panini
+                    <ul class="ingredients">
+                        <li class="meat">prosciutto</li>
+                        <li>provolone</li>
+                        <li>avocado</li>
+                        <li>sourdough roll</li>
+                    </ul>
+                </li>
+                <li>
+                    Southwest Slider
+                    <ul class="ingredients">
+                        <li>whole chiles</li>
+                        <li class="hamburger">hamburger</li>
+                        <li>pepperjack cheese</li>
+                        <li>multigrain roll</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="rightColumn">
+            <h3>Appetizer</h3>
+            <ul>
+                <li>
+                    Frittata
+                    <ul class="ingredients">
+                        <li class="meat">eggs</li>
+                        <li>Asiago cheese</li>
+                        <li>potatoes</li>
+                    </ul>
+                </li>
+                <li>
+                    Coconut soup
+                    <ul class="ingredients">
+                        <li>coconut milk</li>
+                        <li class="meat">chicken</li>
+                        <li>vegetable broth</li>
+                    </ul>
+                </li>
+                <li>
+                    Soup Du Jour
+                    <ul class="ingredients">
+                        <li class="meat">grilled steak</li>
+                        <li>mushrooms</li>
+                        <li>vegetables</li>
+                        <li>vegetable broth</li>
+                    </ul>
+                </li>
+                <li>
+                    Hot and Sour Soup
+                    <ul class="ingredients">
+                        <li class="meat">roasted pork</li>
+                        <li>carrots</li>
+                        <li>Chinese mushrooms</li>
+                        <li>chili</li>
+                        <li>vegetable broth</li>
+                    </ul>
+                </li>
+                <li>
+                    Avocado Rolls
+                    <ul class="ingredients">
+                        <li>avocado</li>
+                        <li>whole chiles</li>
+                        <li>sweet red peppers</li>
+                        <li>ginger sauce</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <label class="WorkNO">Work serial Number: @ViewBag.WorkNO</label>
+</body>
+
+
+
+@section Scripts {
+    <script type="text/javascript" src="~/js/WebVille.js"></script>
+}

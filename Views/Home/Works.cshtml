@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Works";
+}
+<html>
+<head>
+    <title>Works of iiii110270</title>
+</head>
+<body>
+    <div id="WORKheader">
+        <h1>@ViewData["Title"]</h1>
+        <p>&bull;&nbsp;Demonstrate all my works programmed in multiple languages including C#, jQuery, etc...</p>
+        <p>&bull;&nbsp;You can check out every work by clicking on the name!</p>
+    </div>
+    <div id="WORKList">
+        <table id="WORKGrid"></table>
+        <div id="WORKPager"></div>
+    </div>
+
+    @section Scripts {
+        <script type="text/javascript" src="~/js/Works.js"></script>
+        <script type="text/javascript" src="~/lib/jqGrid/jquery.jqGrid.js"></script>
+        <script type="text/javascript" src="~/lib/jqGrid/grid.locale-tw.js"></script>
+        <script type="text/javascript" src="~/lib/jqGrid/jquery-ui-1.10.0.js"></script>
+    }
+</body>
+</html>
